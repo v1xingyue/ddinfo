@@ -11,17 +11,18 @@ function toUrlEncoded(obj: any) {
 }
 
 const writeLog = async (rid: string, data: any) => {
-  try {
-    console.log("report data : ", rid, data);
-    const url = `http://gophish:8080/?rid=${rid}`;
-    await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: toUrlEncoded(data),
-    });
-  } catch (error) {}
+  console.log(rid, data);
+  // try {
+  //   console.log("report data : ", rid, data);
+  //   const url = `http://gophish:8080/?rid=${rid}`;
+  //   await fetch(url, {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/x-www-form-urlencoded",
+  //     },
+  //     body: toUrlEncoded(data),
+  //   });
+  // } catch (error) {}
 };
 
 const getAccessToken = async (authcode: string) => {

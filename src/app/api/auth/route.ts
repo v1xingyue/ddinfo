@@ -33,9 +33,9 @@ const getAccessToken = async (authcode: string) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      clientId: "dingtwtxvupuaw60ln0n",
+      clientId: "dingr53f4pgnvupo5mub",
       clientSecret:
-        "rKCtKq9f9MN0bg1m9EL7Kjhy79H-a_Meu2wEvKkf_IzEx8vC9ppr5ABSGQgqwVcw",
+        "rYXW4VTnP3Wt3Nchi8CQ4IkFEUlxoNpHWFCqzWa8gGwZ4O__qhSefKpt9z2ckWwp",
       code: authcode,
       grantType: "authorization_code",
     }),

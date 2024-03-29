@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 
 export default function Component() {
   const searchParams = useSearchParams();
-  const clientID = "dingtwtxvupuaw60ln0n";
+  const clientID = "dingr53f4pgnvupo5mub";
   const rewriteURL = "https://ddinfo.vercel.app/api/auth";
 
   const [dingUrl, updateDingUrl] = useState("");

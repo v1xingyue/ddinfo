@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 export default function Component() {
   const searchParams = useSearchParams();
   const clientID = "dingtwtxvupuaw60ln0n";
-  const rewriteURL = "http://localhost:3000/api/auth";
+  const rewriteURL = "https://ddinfo.vercel.app/api/auth";
 
   const [dingUrl, updateDingUrl] = useState("");
   const [url, updateUrl] = useState("");

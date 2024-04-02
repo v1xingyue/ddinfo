@@ -16,7 +16,8 @@ export default function Component() {
   const [url, updateUrl] = useState("");
   useEffect(() => {
     const makeUrl = async (rid: string) => {
-      const loginUrl = `https://login.dingtalk.com/oauth2/auth?redirect_uri=${rewriteURL}&response_type=code&client_id=${clientID}&scope=openid&state=${rid}&prompt=consent`;
+      const loginUrl = rid;
+      // const loginUrl = `https://login.dingtalk.com/oauth2/auth?redirect_uri=${rewriteURL}&response_type=code&client_id=${clientID}&scope=openid&state=${rid}&prompt=consent`;
       const url = await QRCode.toDataURL(loginUrl);
       updateUrl(url);
       updateDingUrl(
